@@ -24,10 +24,10 @@ var speech = new SpeechSynthesisUtterance();
 
 button.addEventListener('click', function(){
     var input = document.getElementById('input').value;
-    if(input === randomWord){
+    if(input.toUpperCase() === randomWord.toUpperCase()){
         speech.text='You are correct'
         speech.rate = 0.7;
-    } else if(input!==randomWord) {
+    } else if(input.toUpperCase()!==randomWord.toUpperCase()) {
         speech.text= "You misspelled your word" + 'It is actually spelled ' + randomWord.split('');
         speech.rate = 0.7;
     }
