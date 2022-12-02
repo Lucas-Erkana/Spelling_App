@@ -1,0 +1,30 @@
+body{
+    background: #222;
+}
+ 
+#buttons {
+    display: flex;
+    flex-direction: column;
+}
+#container {
+    border: 3px solid white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+    margin:auto;
+    position: relative;
+    top:170px;
+    border-radius: 20px;
+}
+
+#heading{
+    font-weight: bold;
+    font-size: 6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0 0 5px white,
+    0 0 15px whitesmoke,
+    0 0 30px whitesmoke,
+    0 0 100px whitesmoke;
+}
