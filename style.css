@@ -13,11 +13,11 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     width: 50%;
-    margin:auto;
     position: relative;
     top:170px;
     border-radius: 20px;
-    margin-top: -18%;
+    margin-top:-10%;
+    margin-left:25%;
 }
 
 #heading{
@@ -32,5 +32,13 @@ body{
 }
 
 #image{
-    margin-left: 40%;
+    margin-left: 35%;
+    height:200px;
+    border: 2px solid white;
+    width:200px;
+}
+
+.first{
+    display: flex;
+    flex-direction: column;
 }

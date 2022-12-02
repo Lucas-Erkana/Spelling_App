@@ -1,4 +1,4 @@
-var words = ['apple','lion','banana','cat','dog','firefly','giraffe','house','icecream','kangaroo','happy','sad','dancing','mommy']
+var words = ['apple','lion','banana','cat','dog','firefly','giraffe','house','icecream','kangaroo','happy','sad','dancing','mommy','zebra','uncle','kuku']
 var randomWord  = words[Math.floor(Math.random()*words.length)];
 var button = document.getElementById('checkButton');
 var button2 = document.getElementById('getWordButton');
@@ -41,7 +41,7 @@ button2.addEventListener('click', function(){
         speech.lang='en-US';
         speech.volume=1;
         speech.rate=0.9;
-        image.innerHTML += `<img src="${pics[words.indexOf(randomWord)]}" alt="${randomWord}" width = 200 height="auto">`
+        image.innerHTML += `<img src="${pics[words.indexOf(randomWord)]}" alt="${randomWord}" width ="200" height="200">`
 
        window.speechSynthesis.speak(speech)
 })
