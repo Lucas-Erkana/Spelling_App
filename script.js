@@ -1,8 +1,16 @@
-var words = ['apple','banana','cat','dog','firefly','giraffe','house','icecream','kangaroo','happy','sad','dancing','mommy']
+var words = ['apple','lion','banana','cat','dog','firefly','giraffe','house','icecream','kangaroo','happy','sad','dancing','mommy']
 var randomWord  = words[Math.floor(Math.random()*words.length)];
 var button = document.getElementById('checkButton');
 var button2 = document.getElementById('getWordButton');
 var resetButon = document.getElementById('resetButton');
+var image = document.getElementById('image')
+
+const pics = []
+for(let i = 0;i<words.length;i++){
+    pics.push('images/'+words[i]+'.png')
+}
+console.log(randomWord)
+console.log(words.indexOf(randomWord))
 
 button.className = 'btn btn-primary';
 button2.className = 'btn btn-success';
@@ -33,6 +41,7 @@ button2.addEventListener('click', function(){
         speech.lang='en-US';
         speech.volume=1;
         speech.rate=0.9;
+        image.innerHTML += `<img src="${pics[words.indexOf(randomWord)]}" alt="${randomWord}" width = 200 height="auto">`
 
        window.speechSynthesis.speak(speech)
 })
